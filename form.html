@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <form method="POST" name="order-form">
+            <h2>Order</h2>
+            <!-- <div class="img"></div> -->
+            <!-- <div class="location-code"><a href="/">MODEL NO</a><input class="modelno" value="SBV-06" name="modelno"></input></div><br> -->
+            <!-- <div class="form-group"> -->
+                <!-- <label for="Contact">Contact</label>
+                <input type="tel" placeholder="Phone Number" name="Phone-number" required> -->
+            <!-- </div> -->
+            <!-- <div class="break"></div> -->
+            <div class="form-group">
+                <label for="Delivery">Delivery</label>
+                <input type="text" placeholder="First Name" name="First-name" required>
+            </div>
+            <!-- <div class="form-group">
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+          <option value="">Select Product</option>
+          <option value="product1">Product 1</option>
+          <option value="product2">Product 2</option>
+          <option value="product3">Product 3</option>
+        </select>
+      </div> -->
+            <div class="form-group">
+                <input type="text" placeholder="Last Name" name="Last-name" required>
+            </div>
+            <div class="form-group">
+                <input id="shipping-address1" name="address1" placeholder="Address" required="" type="text" aria-autocomplete="list" aria-controls="shipping-address1-options" aria-owns="shipping-address1-options" aria-expanded="false" aria-required="true" aria-labelledby="shipping-address1-label" aria-haspopup="listbox" role="combobox" autocomplete="shipping address-line1" autocorrect="off" data-protected-input="true" class="_7ozb2uq _1frageme0 _1fragemm4 _1fragemhd _1fragemle _7ozb2ur _1fragemhz _1fragemi9 _7ozb2u11 _7ozb2u1j" aria-describedby="error-for-shipping-address1" aria-invalid="true">
+            </div>
+            <div class="form-group">
+                <input id="TextField2" name="city" placeholder="City" required="" type="text" aria-required="true" aria-labelledby="TextField2-label" autocomplete="shipping address-level2" class="_7ozb2uq _1frageme0 _1fragemm4 _1fragemhd _1fragemle _7ozb2ur _7ozb2u11 _7ozb2u1j">
+            </div>
+            <div class="form-group">
+                <select name="zone" id="Select1" required="" autocomplete="shipping address-level1" class="_b6uH _1fragemma yA4Q8 vYo81 RGaKd">
+          <option  value="">State&nbsp;</option>
+          <option data-alternate-values="[&quot;Andaman and Nicobar Islands&quot;,&quot;Andaman and Nicobar&quot;]" value="AN">Andaman and Nicobar Islands</option>
+          <option data-alternate-values="[&quot;Andhra Pradesh&quot;]" value="AP">Andhra Pradesh</option>
+          <option data-alternate-values="[&quot;Arunachal Pradesh&quot;]" value="AR">Arunachal Pradesh</option>
+          <option data-alternate-values="[&quot;Assam&quot;]" value="AS">Assam</option>
+          <option data-alternate-values="[&quot;Bihar&quot;]" value="BR">Bihar</option>
+          <option data-alternate-values="[&quot;Chandigarh&quot;]" value="CH">Chandigarh</option>
+          <option data-alternate-values="[&quot;Chhattisgarh&quot;,&quot;Chattisgarh&quot;,&quot;CT&quot;]" value="CG">Chhattisgarh</option>
+          <option data-alternate-values="[&quot;Dadra and Nagar Haveli&quot;]" value="DN">Dadra and Nagar Haveli</option>
+          <option data-alternate-values="[&quot;Daman and Diu&quot;]" value="DD">Daman and Diu</option>
+          <option data-alternate-values="[&quot;Delhi&quot;]" value="DL">Delhi</option>
+          <option data-alternate-values="[&quot;Goa&quot;]" value="GA">Goa</option>
+          <option data-alternate-values="[&quot;Gujarat&quot;]" value="GJ">Gujarat</option>
+          <option data-alternate-values="[&quot;Haryana&quot;]" value="HR">Haryana</option>
+          <option data-alternate-values="[&quot;Himachal Pradesh&quot;]" value="HP">Himachal Pradesh</option>
+          <option data-alternate-values="[&quot;Jammu and Kashmir&quot;]" value="JK">Jammu and Kashmir</option>
+          <option data-alternate-values="[&quot;Jharkhand&quot;]" value="JH">Jharkhand</option>
+          <option data-alternate-values="[&quot;Karnataka&quot;]" value="KA">Karnataka</option>
+          <option data-alternate-values="[&quot;Kerala&quot;]" value="KL">Kerala</option>
+          <option data-alternate-values="[&quot;Ladakh&quot;]" value="LA">Ladakh</option>
+          <option data-alternate-values="[&quot;Lakshadweep&quot;]" value="LD">Lakshadweep</option>
+          <option data-alternate-values="[&quot;Madhya Pradesh&quot;]" value="MP">Madhya Pradesh</option>
+          <option data-alternate-values="[&quot;Maharashtra&quot;]" value="MH">Maharashtra</option>
+          <option data-alternate-values="[&quot;Manipur&quot;]" value="MN">Manipur</option>
+          <option data-alternate-values="[&quot;Meghalaya&quot;]" value="ML">Meghalaya</option>
+          <option data-alternate-values="[&quot;Mizoram&quot;]" value="MZ">Mizoram</option>
+          <option data-alternate-values="[&quot;Nagaland&quot;]" value="NL">Nagaland</option>
+          <option data-alternate-values="[&quot;Odisha&quot;,&quot;OD&quot;,&quot;Orissa&quot;]" value="OR">Odisha</option>
+          <option data-alternate-values="[&quot;Puducherry&quot;]" value="PY">Puducherry</option>
+          <option data-alternate-values="[&quot;Punjab&quot;]" value="PB">Punjab</option>
+          <option data-alternate-values="[&quot;Rajasthan&quot;]" value="RJ">Rajasthan</option>
+         <option data-alternate-values="[&quot;Sikkim&quot;]" value="SK">Sikkim</option>
+          <option data-alternate-values="[&quot;Tamil Nadu&quot;]" value="TN">Tamil Nadu</option>
+          <option data-alternate-values="[&quot;Telangana&quot;]" value="TS">Telangana</option>
+          <option data-alternate-values="[&quot;Tripura&quot;]" value="TR">Tripura</option>
+          <option data-alternate-values="[&quot;Uttar Pradesh&quot;]" value="UP">Uttar Pradesh</option>
+          <option data-alternate-values="[&quot;Uttarakhand&quot;]" value="UK">Uttarakhand</option>
+          <option data-alternate-values="[&quot;West Bengal&quot;]" value="WB">West Bengal</option>
+        </select>
+            </div>
+            <div class="form-group">
+                <input id="TextField3" name="postalCode" placeholder="PIN code" required="" type="text" inputmode="numeric" aria-required="true" aria-labelledby="TextField3-label" autocomplete="shipping postal-code" autocapitalize="characters" class="_7ozb2uq _1frageme0 _1fragemm4 _1fragemhd _1fragemle _7ozb2ur _7ozb2u11 _7ozb2u1j">
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Phone Number" name="Phone-number" required> 
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="Price">Price:</label>
+                <input type="number" id="price" name="Price">
+            </div>
+            <script>
+                quantity.oninput = showValue;
+
+                function showValue(){
+                  price.value = this.value * 500;
+                }
+            </script>
+            <div class="form-group price">
+              <input class="submit" type="submit"></input>
+                <!-- <div class="submit"> <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NMdrQiioH2qRbx" async></script></div> -->
+            </div>
+        </form>
+    </div>
+    <script src="formScript.js"></script>
+</body>
+
+</html>
